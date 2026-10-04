@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=4">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -26,7 +26,7 @@
     <a class="btn btn--menu" href="https://buchung.treatwell.at/ort/blakolmer-hair-skincrafts/" target="_blank" rel="noopener">Termin buchen</a>
   </nav>
   <a class="btn btn--nav" href="https://buchung.treatwell.at/ort/blakolmer-hair-skincrafts/" target="_blank" rel="noopener">Termin buchen</a>
-  <button class="nav__toggle" id="toggle" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span></button>
+  <button class="nav__toggle" id="toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span></button>
 </header>
 
 <main id="top">
@@ -51,11 +51,15 @@
 <!-- PHILOSOPHIE -->
 <section class="phil" id="philosophie">
   <div class="wrap phil__grid">
-    <p class="label reveal">Philosophie</p>
-    <h2 class="phil__title reveal">Individuelle Beratung. <em>Bewusste Methoden.</em> Ein ruhiger Rahmen.</h2>
-    <div class="phil__body">
-      <p class="reveal">Bei Blakolmer entstehen durchdachte Konzepte für Haar und Kopfhaut – für ein Styling mit Charakter. Modernes Design, klare Formen und natürliche Bepflanzung schaffen Abstand vom Alltag.</p>
-      <p class="reveal">Ein Erlebnis, das weit über einen klassischen Friseurbesuch hinausgeht.</p>
+    <p class="label phil__label reveal">Philosophie</p>
+    <h2 class="phil__title reveal">
+      <span>Individuelle Beratung.</span>
+      <em>Bewusste Methoden.</em>
+      <span>Ein ruhiger Rahmen.</span>
+    </h2>
+    <div class="phil__body reveal">
+      <p>Bei Blakolmer entstehen durchdachte Konzepte für Haar und Kopfhaut – für ein Styling mit Charakter. Modernes Design, klare Formen und natürliche Bepflanzung schaffen Abstand vom Alltag.</p>
+      <p>Ein Erlebnis, das weit über einen klassischen Friseurbesuch hinausgeht.</p>
     </div>
     <figure class="phil__img reveal">
       <img src="img/s05.jpg" alt="Glattes, dunkles Haar" loading="lazy" width="768" height="932" data-parallax>
@@ -117,9 +121,9 @@
   <div class="scalp__text">
     <p class="eyebrow reveal">Hair &amp; Skin</p>
     <h2 class="reveal">Kopfhaut&shy;analyse</h2>
-    <p class="reveal">Schönes Haar beginnt auf der Kopfhaut. Die Analyse ist die Grundlage für durchdachte Konzepte, die Haar und Haut als Einheit verstehen.</p>
+    <p class="scalp__copy reveal">Schönes Haar beginnt auf der Kopfhaut. Die Analyse ist die Grundlage für durchdachte Konzepte, die Haar und Haut als Einheit verstehen.</p>
     <p class="scalp__price reveal">€48</p>
-    <div class="actions reveal">
+    <div class="reveal">
       <a class="btn btn--light" href="https://buchung.treatwell.at/ort/blakolmer-hair-skincrafts/" target="_blank" rel="noopener">Kopfhautanalyse buchen</a>
     </div>
   </div>
@@ -176,9 +180,9 @@
   <div class="wrap reviews__inner">
     <p class="label reveal">Bewertungen</p>
     <p class="reviews__score reveal">5.0</p>
-    <p class="reviews__stars reveal" aria-label="5 von 5 Sternen">★★★★★</p>
+    <p class="reviews__stars reveal" role="img" aria-label="5 von 5 Sternen">★★★★★</p>
     <p class="reviews__text reveal">368 Bewertungen auf Treatwell</p>
-    <a class="link reveal" href="https://buchung.treatwell.at/ort/blakolmer-hair-skincrafts/" target="_blank" rel="noopener">Alle Bewertungen ansehen <span aria-hidden="true">→</span></a>
+    <a class="link reveal" href="https://www.treatwell.at/en/place/blakolmer-hair-skincrafts/" target="_blank" rel="noopener">Alle Bewertungen ansehen <span aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -199,24 +203,35 @@
         Siebensterngasse 25<br>
         1070 Wien, Österreich
       </address>
-      <dl class="reveal">
-        <dt>Telefon</dt><dd><a href="tel:+436702032217">+43 670 203 2217</a></dd>
-        <dt>E-Mail</dt><dd><a href="mailto:hello@blakolmer.at">hello@blakolmer.at</a></dd>
-        <dt>Instagram</dt><dd><a href="https://instagram.com/blakolmer_hair_skincrafts" target="_blank" rel="noopener">@blakolmer_hair_skincrafts</a></dd>
-        <dt>Öffnungszeiten</dt>
-        <dd>
-          <div class="hours">
-            <span class="hours__d">Mo</span><span class="hours__t off">geschlossen</span>
-            <span class="hours__d">Di</span><span class="hours__t off">geschlossen</span>
-            <span class="hours__d">Mi</span><span class="hours__t">09:00–19:00</span>
-            <span class="hours__d">Do</span><span class="hours__t">09:00–20:00</span>
-            <span class="hours__d">Fr</span><span class="hours__t">09:00–20:00</span>
-            <span class="hours__d">Sa</span><span class="hours__t">09:00–17:00</span>
-            <span class="hours__d">So</span><span class="hours__t off">geschlossen</span>
+
+      <div class="contact-meta reveal">
+        <div class="contact-row">
+          <span class="contact-label">Telefon</span>
+          <span class="contact-value"><a href="tel:+436702032217">+43 670 203 2217</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">E-Mail</span>
+          <span class="contact-value"><a href="mailto:hello@blakolmer.at">hello@blakolmer.at</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value"><a href="https://instagram.com/blakolmer_hair_skincrafts" target="_blank" rel="noopener">@blakolmer_hair_skincrafts</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Öffnungszeiten</span>
+          <div class="contact-value hours">
+            <span class="hours__day">Mo</span><span class="hours__time is-closed">geschlossen</span>
+            <span class="hours__day">Di</span><span class="hours__time is-closed">geschlossen</span>
+            <span class="hours__day">Mi</span><span class="hours__time">09:00–19:00</span>
+            <span class="hours__day">Do</span><span class="hours__time">09:00–20:00</span>
+            <span class="hours__day">Fr</span><span class="hours__time">09:00–20:00</span>
+            <span class="hours__day">Sa</span><span class="hours__time">09:00–17:00</span>
+            <span class="hours__day">So</span><span class="hours__time is-closed">geschlossen</span>
           </div>
-        </dd>
-      </dl>
-      <a class="btn btn--primary btn--lg reveal" href="https://buchung.treatwell.at/ort/blakolmer-hair-skincrafts/" target="_blank" rel="noopener">Termin buchen</a>
+        </div>
+      </div>
+
+      <a class="btn btn--primary btn--lg visit__cta reveal" href="https://buchung.treatwell.at/ort/blakolmer-hair-skincrafts/" target="_blank" rel="noopener">Termin buchen</a>
     </div>
     <div class="visit__map reveal">
       <iframe title="Karte: Blakolmer Hair &amp; Skincrafts" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.2890726028168!2d16.349219324079243!3d48.20157737445887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d071e1d648847%3A0x646da034395f22f3!2sBlakolmer%20Hair%20%26%20Skincrafts!5e0!3m2!1sde!2sat!4v1729790844901!5m2!1sde!2sat"></iframe>
@@ -236,6 +251,6 @@
   <small>© <span id="y">2026</span> Blakolmer Hair &amp; Skincrafts</small>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=4"></script>
 </body>
 </html>
