@@ -236,8 +236,9 @@ dd a:hover{border-color:var(--wood)}
 .reviews__text{font-family:var(--serif);font-size:clamp(1.3rem,2.4vw,1.8rem);margin:0 0 2.2rem}
 
 /* hours */
-.hours{list-style:none;margin:0;padding:0;display:grid;gap:.15rem}
-.hours li{display:flex;gap:1.4rem;font-variant-numeric:tabular-nums}
-.hours span{width:1.8rem;color:var(--wood);font:400 .72rem/1.9 var(--sans);letter-spacing:.14em;text-transform:uppercase}
-.hours .off{opacity:.45}
+.hours{display:grid;grid-template-columns:2.4rem 1fr;column-gap:1.5rem;row-gap:.1rem;margin:0;padding:0;font-variant-numeric:tabular-nums}
+.hours__d{color:var(--wood);font:400 .72rem/2.4 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.hours__t{line-height:1.7;padding:.35rem 0 0}
+.hours__t.off{opacity:.5}
 .visit dd{align-self:start}
+@media (max-width:700px){.hours{margin-top:.2rem}.hours__d{line-height:2}.hours__t{padding-top:.1rem}}
